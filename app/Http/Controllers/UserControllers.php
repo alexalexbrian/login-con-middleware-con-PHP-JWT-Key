@@ -9,6 +9,10 @@ use App\Models\UserMetadata;
 class UserControllers extends Controller
 {
     //
+    public function __construct(){
+
+        $this->middleware("verificacion");
+    }
 
     //Pagina principal
     public function acceso_login(){
