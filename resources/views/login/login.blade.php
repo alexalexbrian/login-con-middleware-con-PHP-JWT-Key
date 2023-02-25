@@ -37,7 +37,7 @@
 
 
   <button type="submit" class="btn btn-primary">Send</button>
-
+<input type="hidden" name="Authorization"  id="Authorization" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb3JyZW8iOiJ0ZXN0QHRlc3QuY29tIiwicGFzc3dvcmQiOiIxMjM0NTY3ODkiLCJpYXQiOjE2NzczNjQwMTl9.d8fwgMWu_p6VFbH_IPyCwo_P5-BmIaibpxHAcpNRiNA">
   {{csrf_field()}}
 </form>
 

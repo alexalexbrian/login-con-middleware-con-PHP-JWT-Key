@@ -5,10 +5,12 @@
 @section('content')
 
 <main class="container">
-<h3>Modelo</h3>
+<h3>admin admin admin admin</h3>
 
 <!--Codigo php en Blade-->
 @php
+
+echo $user;
 
 //print_r($datos);
 

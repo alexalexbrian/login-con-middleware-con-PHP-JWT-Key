@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserControllers;
+use App\Http\Controllers\loginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,12 +20,12 @@ Route::get('/', function () {
 */
 
 //Iniciar sesion con formulario
-Route::get('/', [UserControllers::class, 'acceso_login'])->name('login');
-Route::get('/login', [UserControllers::class, 'acceso_login'])->name('acceso_login');
-Route::post('/login', [UserControllers::class, 'acceso_login_post'])->name('acceso_login_post');
+Route::get('/', [loginController::class, 'acceso_login'])->name('login');
+Route::get('/login', [loginController::class, 'acceso_login'])->name('acceso_login');
+Route::post('/login', [loginController::class, 'acceso_login_post'])->name('acceso_login_post');
 
 //cerrar cesión
-Route::get('/loginOut', [UserControllers::class, 'loginOut_1'])->name('loginOut');
+Route::get('/loginOut', [loginController::class, 'loginOut_1'])->name('loginOut');
 
 //Url privada, solo puedes entrar si has iniciado sesion, usamos middleware de laravel 
 Route::get('/login/table', [UserControllers::class, 'login_table'])->name('login_table');
