@@ -1,9 +1,7 @@
 
-## Ejemplo de iniciar sesión con lavarel usando middleware NATIVO.
+## PHP-JWT Ejemplo de iniciar sesión con lavarel usando middleware php-jwt.
 
 Necesitas ejecutar las migraciones para crear 3 bases de datos, users, user_metadata, perfil
-
-
 
 Tambien se adjunta base de datos 
 
@@ -12,6 +10,11 @@ Requiere:
 php artisan migrate
 
 composer install 
+
+composer require firebase/php-jwt
+
+Instalación de php-jwt
+https://github.com/firebase/php-jwt
 
 Usuario en la base de datos: 
 user: test@test.com
